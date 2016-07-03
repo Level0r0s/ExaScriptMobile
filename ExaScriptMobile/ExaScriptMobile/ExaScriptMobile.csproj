@@ -72,6 +72,16 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExaScript\ExaScript OTG\ExaScript OTG.csproj">
+      <Project>{341674dd-67ba-4221-a4e0-c90fc8dd66b5}</Project>
+      <Name>ExaScript OTG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExaScript\ExaScript\ExaScript.csproj">
+      <Project>{95289ea9-5778-489d-ab48-f81f2ce2da32}</Project>
+      <Name>ExaScript</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

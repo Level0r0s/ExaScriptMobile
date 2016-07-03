@@ -540,7 +540,6 @@
   </ItemGroup>
   <ItemGroup Condition=" '$(IsFullFramework)' == 'true' ">
     <Reference Include="System.Xml" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="Microsoft.Dynamic, Version=1.2.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1">
       <HintPath>..\packages\DynamicLanguageRuntime.1.2.0-alpha1\lib\net45\Microsoft.Dynamic.dll</HintPath>
@@ -551,9 +550,6 @@
     <Reference Include="Microsoft.Scripting.Metadata, Version=1.2.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1">
       <HintPath>..\packages\DynamicLanguageRuntime.1.2.0-alpha1\lib\net45\Microsoft.Scripting.Metadata.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(ReferencedPlatform)' == 'V4'">
-    <Reference Include="System.Xaml" />
   </ItemGroup>
   <Import Project="$(CSharpTargets)" />
   <Import Project="$(BeforeTargetFiles)" />
